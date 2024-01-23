@@ -12,7 +12,7 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight--color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon.stars.svg);
-  --border-profile: rgb(219, 219, 219); 
+  --border-profile: rgb(219, 219, 219);
 }
 
 .light {
@@ -23,11 +23,11 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight--color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sol-negro-redondo-35.svg);
-  --border-profile: black; 
+  --border-profile: black;
 }
 
 body {
-  background: var(--bg-url) no-repeat top center/cover ;
+  background: var(--bg-url) no-repeat top center/cover;
   height: 100vh;
 }
 
@@ -49,7 +49,7 @@ body * {
   padding: 24px;
 }
 
-#profile img{
+#profile img {
   width: 120px;
   border-radius: 50%;
   border: 3px solid var(--border-profile);
@@ -86,10 +86,12 @@ body * {
 
 .light #switch button {
   animation: slide-in 0.4s forwards;
+  cursor: pointer;
 }
 
 #switch button:hover {
   outline: 8px solid var(--highlight--color);
+  cursor: pointer;
 }
 
 #switch span {
@@ -137,7 +139,7 @@ ul li a {
 /* psudo-selector */
 ul li a:hover {
   background: var(--surface-color-hover);
-  border: 1.5px solid var(--text-color)
+  border: 1.5px solid var(--text-color);
 }
 
 /* social links */
@@ -171,13 +173,13 @@ footer {
 
 /* media queries */
 @media (min-width: 700px) {
-    :root {
-      --bg-url: url(./assets/bg-desktop.jpg);
-    }
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
 
-    .light {
-      --bg-url: url(./assets/bg-desktop-light.jpg);
-    }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
 
 /* anmimation */
